@@ -1,23 +1,17 @@
 const Course = require('../model/course.model');
 const { mutipleToObject } = require('../../multi/index');
 
-class SiteControllter {
-    // [GET] /home
-    index(req, res, next) {
-        Course.find({})
+class CoursesController {
+    //[GET] /courses/:slug
+    show(req, res, next) {
+        Course.find({ slug: req.params.slug })
             .then((courses) => {
-                return res.render('home', {
+                return res.render('courses/show', {
                     courses: mutipleToObject(courses),
                 });
             })
             .catch(next);
     }
-
-    //[GET] /search
-
-    search(req, res) {
-        res.render('search');
-    }
 }
 
-module.exports = new SiteControllter();
+module.exports = new CoursesController();
