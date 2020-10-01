@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/index.js",
-    "watch": "node-sass --watch ./src/resources/scss -o ./src/public/css"
+    "watch": "node-sass --watch ./src/resources/scss -o ./src/public/css",
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'"
   },
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
@@ -14,7 +15,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
-    }	
+    }
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,8 @@
     "express": "^4.17.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "method-override": "^3.0.0",
+    "mongoose-slug-generator": "^1.0.4",
     "prettier": "^2.1.2"
   },
   "devDependencies": {

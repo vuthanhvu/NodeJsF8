@@ -1,18 +1,25 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">Blog Ngao</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Chảnh Chảnh <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+    <div class="container">
+        <a class="navbar-brand" href="/">Blog Chảnh</a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-9/117933312_3160820684033008_1894872128508554607_o.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=rbltA9HtFBwAX8wWihC&_nc_ht=scontent.fhan3-1.fna&oh=6dbae766e893c559a1fa02df8821a184&oe=5F97A27F" alt="" class="user-avatar">
+                    Chảnh Chảnh
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/courses/create">Create new course</a>
+                    <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/me/stored/courses">My courses</a>
+                        <a class="dropdown-item" href="#">My blogs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
