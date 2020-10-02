@@ -9,3 +9,16 @@
     border-radius: 50%;
     margin-right: 5px;
 }
+
+footer {
+    margin-top: 30px;
+}
+
+.ul-footer {
+    list-style: none;
+    & li a {
+        color: white;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
